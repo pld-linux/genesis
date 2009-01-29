@@ -1,5 +1,3 @@
-# TODO
-# - fix R
 Summary:	Genesis Sync
 Name:		genesis
 Version:	0.4
@@ -12,12 +10,12 @@ URL:		https://launchpad.net/genesis-sync
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python
-#Requires:	python-configobj
+Requires:	python-configobj
 Requires:	python-dbus
-#Requires:	python-evolution or python-gnome2-desktop
-#Requires:	python-gtk2
-#Requires:	python-notify
-#Requires:	python-xdg
+Requires:	python-evolution
+Requires:	python-pygtk-gtk
+Requires:	python-pynotify
+Requires:	python-pyxdg
 Requires:	syncevolution
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
