@@ -50,3 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/genesis.png
 %dir %{py_sitescriptdir}/Genesis
 %{py_sitescriptdir}/Genesis/*.py[co]
+%if "%{py_ver}" > "2.4"
+%{py_sitescriptdir}/genesis-*.egg-info
+%endif
